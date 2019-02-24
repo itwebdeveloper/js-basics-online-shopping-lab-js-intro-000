@@ -19,7 +19,20 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length == 0) {
+    return "Your shopping cart is empty.";
+  }
+
+  text = "In your cart, you have";
+  for(let i = 0; i < cart.length; i++) {
+    text += ` ${cart[i].itemName} bananas at $${cart[i].itemPrice}`;
+
+    if (i != cart.length - 1) {
+      text += ",";
+    } else {
+      text += ".";
+    }
+  }
 }
 
 function total() {
