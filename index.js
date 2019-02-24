@@ -28,7 +28,7 @@ function viewCart() {
     text += ` ${cart[i].itemName} at $${cart[i].itemPrice}`;
 
     if (i != cart.length - 1) {
-      text += ",";
+      text += ", and ";
     } else {
       text += ".";
     }
