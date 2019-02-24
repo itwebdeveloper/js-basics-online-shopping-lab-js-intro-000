@@ -10,7 +10,10 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  obj = {
+    itemName: item,
+    itemPrice: Math.random() * 100;
+  }
 }
 
 function viewCart() {
