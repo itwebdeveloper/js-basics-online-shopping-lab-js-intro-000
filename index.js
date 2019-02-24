@@ -23,7 +23,7 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
 
-  text = "In your cart, you have";
+  var text = "In your cart, you have";
   for(let i = 0; i < cart.length; i++) {
     text += ` ${cart[i].itemName} bananas at $${cart[i].itemPrice}`;
 
