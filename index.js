@@ -33,6 +33,7 @@ function viewCart() {
       text += ".";
     }
   }
+  return text;
 }
 
 function total() {
