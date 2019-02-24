@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   obj = {
     itemName: item,
-    itemPrice: Math.random() * 100;
+    itemPrice: Math.floor(Math.random() * 100);
   }
 }
 
