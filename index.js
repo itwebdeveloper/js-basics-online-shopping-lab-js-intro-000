@@ -25,6 +25,10 @@ function viewCart() {
 
   var text = "In your cart, you have";
   for(let i = 0; i < cart.length; i++) {
+    if (i == cart.length - 1) {
+      text += ", and";
+    }
+    
     text += ` ${cart[i].itemName} at $${cart[i].itemPrice}`;
 
     if (i != cart.length - 1) {
