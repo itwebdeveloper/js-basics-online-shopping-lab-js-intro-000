@@ -122,7 +122,7 @@ describe("total()", function() {
 describe("removeFromCart()", function() {
   it("removes the specified item from the cart", function() {
     addToCart("vanilla");
-    //addToCart("watermelon");
+    addToCart("watermelon");
     addToCart("yams");
 
     removeFromCart("watermelon");
@@ -146,7 +146,7 @@ describe("removeFromCart()", function() {
 
 describe("placeOrder()", function() {
   it("doesn't place the order if a credit card number is not provided", function() {
-
+    
     expect(placeOrder()).toEqual("Sorry, we don't have a credit card on file for you.");
   });
 
@@ -156,7 +156,7 @@ describe("placeOrder()", function() {
     const cartTotal = total();
     const cardNumber = Math.floor(Math.random() * 100000000);
 
-
+    
 
     expect(placeOrder(cardNumber)).toEqual(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`);
   });
