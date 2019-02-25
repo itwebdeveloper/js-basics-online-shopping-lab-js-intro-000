@@ -53,10 +53,10 @@ function removeFromCart(item) {
   if (cart == []) {
     return "That item is not in your cart.";
   } else {
+    return item;
     for(let i = 0; i < cart.length; i++) {
       if (cart[i] !== undefined) {
         if (cart[i].itemName == item) {
-          return "Found";
           cart.splice(i, 1);
         } else {
           return "That item is not in your cart.";
