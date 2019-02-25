@@ -41,13 +41,13 @@ function viewCart() {
 }
 
 function total() {
-  var total = 0;
+  var tot = 0;
 
   for(let i = 0; i < cart.length; i++) {
-    total += cart[i].itemPrice;
+    tot += cart[i].itemPrice;
   }
 
-  return total;
+  return tot;
 }
 
 function removeFromCart(item) {
