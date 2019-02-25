@@ -46,7 +46,7 @@ function total() {
   for(let i = 0; i < cart.length; i++) {
     tot += cart[i].itemPrice;
   }
-console.log "Tot: "+ tot;
+console.log("Tot: "+ tot);
   return tot;
 }
 
