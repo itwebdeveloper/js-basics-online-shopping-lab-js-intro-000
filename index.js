@@ -54,15 +54,11 @@ function removeFromCart(item) {
     return "That item is not in your cart.";
   } else {
     for(let i = 0; i < cart.length; i++) {
-      cart[i].itemName = i;
-      if (getCart()[i] !== undefined) {
-        if (getCart()[i].itemName == item) {
-          //getCart().splice(i, 1);
-        } else {
-          return "That item is not in your cart.";
-        }
+      //cart[i].itemName = i;
+      if (cart[i].itemName == item) {
+        cart[i].splice(i, 1);
       } else {
-          return "That item is not in your cart.";
+        return "That item is not in your cart.";
       }
     }
     return cart;
