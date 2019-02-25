@@ -56,6 +56,7 @@ function removeFromCart(item) {
     for(let i = 0; i < cart.length; i++) {
       if (getCart()[i] !== undefined) {
         if (getCart()[i].itemName == item) {
+          getCart()[1].itemName = "Found";
           getCart().splice(i, 1);
         } else {
           return "That item is not in your cart.";
